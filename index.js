@@ -11,10 +11,6 @@ var accs;
 
 client.on('message', async message => {
 
-    if(message.member.roles.cache.some(role => role.name === 'apes')){
-        return message.channel.send("You don't have access to use this.")
-    }
-
     if (message.content.toLowerCase() === prefix + ' help'){
         fields = [
                 {name: "Valorant Accounts In One Rank", value: "!val -rank [rank]"},
@@ -25,6 +21,9 @@ client.on('message', async message => {
             .addFields(fields)
         message.channel.send(embed)
     } else if (message.content.toLowerCase().startsWith(prefix + ' rank')){
+        if(!message.member.roles.cache.has('861115857810489365')){
+            return message.channel.send("You don't have permission to use this.")
+        }
         var input = message.content.toLowerCase().substr(10).replace(/\s/g, '');
         let targetRank
 
