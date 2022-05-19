@@ -63,4 +63,4 @@ async function updateAcc(last_played, date_used, display_name){
     return true
 }
 
-module.exports = {getAccs, postAcc, updateAcc}
+module.exports = {getAccs, updateAcc}
