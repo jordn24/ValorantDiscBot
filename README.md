@@ -1,4 +1,4 @@
-# Reddit API Discord Bot
+# Valorant Accounts Discord Bot
 
 ## Introduction
 
