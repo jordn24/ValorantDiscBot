@@ -22,3 +22,5 @@ A Discord bot that uses Google Sheets and Riot APIs to provide accounts of a req
 ```sh
 node index.js
 ```
+
+https://discord.com/oauth2/authorize?client_id=1005525242606788708&scope=bot&permissions=412317371392
